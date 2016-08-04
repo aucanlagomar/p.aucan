@@ -1,12 +1,217 @@
+*{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+/*esta vendría a ser la primera prueba del fondo, desde el body*/
+body{
+	background-color: #cccccc;
+	background-image: url("C:/Users/Luciel/Documents/GitHub/p.aucan/img/fondo_prueba2.jpg");
+	background-position: center;
+	position: relative;
+	margin-top: 25%;
+
+	background-repeat: repeat-y;
+ }
 
 
+a:visited{
+    color:#961E1E;
+}
+
+/*de aqui en adelante es el sticky menu*/
+.contenedor{
+	width: 95%;
+	max-width:1000px;
+	margin: auto; 
+}
+.contenedor p {
+	margin-bottom: 10px;
+}
+footer nav{
+	background: #B7B7B7;
+	margin-bottom: 10px;
+	margin: 15px;
+	margin-left: 25%;
+	-webkit-transition:all ease .8s;
+	-o-transition:all ease .8s;
+	transition: all ease .8s;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+	footer nav ul{
+		list-style: none;
+		overflow: hidden;
+
+
+	}
+		footer nav ul li{
+			float:left;
+
+		}
+			footer nav ul li a {
+				display: block;
+				padding: 10px;
+				color: #D3CBCB;
+				text-decoration: none;
+			}
+			footer nav ul li a:hover{
+				background: #919191;
+			}
+.menu-fixed{
+	position: fixed;
+	z-index: 1000;/*la capa en que se encontraría, 
+	al colocarla en 1000, se posiciones inmediatamente sobre las demás, ya sean imagenes u otros elementos.
+	Si se crea un elemento con capa 1001, ese elemento tendrá prioridad por sobre el menú, superponiéndose.*/
+	bottom: 1%;
+	left: center;
+	width: 100%;
+	max-width:1000px;
+	box-shadow:2px 3px 2px rgba(0,0,0,.2);
+}
+.menu.fixed ul li a{
+	padding: 15px 20px;
+	float: center;
+	position: center;
+	}
+}
+/*todo lo anterior corresponde a la estructura que configura el menú construido desde un footer movil*/
 p{
 	font-size: 15px;
 	font-family: Arial, black;
 }
-
 h5{
 	font-family: Helvetica;
 	font-size: 30px;
 	color:red;
 }
+
+#contenedor_general{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	display: flex;
+
+	flex-direction:column;
+	align-content: right;
+	/*border: double;
+	border-color: #cc0000; quiero ver que pasa si mantengo este borde a la hora 
+	de construir el contenido, para visualizarlo mejor*/
+	vertical-align: baseline;
+	font-style: normal;
+	font-align:normal;
+}
+
+.menu_inicial{
+width:50%;
+position: relative;
+margin-left: auto;
+margin-right: 
+flex-direction: column;
+justify-content: center;
+vertical-align: baseline;
+font-style: normal;
+font-weight: normal;
+}
+/*de aqui en adelante es el primer botón de la pagina menú*/
+.elemento_1{
+	background-image:url("C:/Users/Luciel/Documents/GitHub/p.aucan/img/pucv_boton.jpg");
+    background-repeat: no-repeat;
+    z-index: 500;
+    float: left;
+    width: 20%;
+    height: 450px;
+    margin-right: 0.6%;
+    text-align: right;
+    min-width: 210px;
+    margin-bottom: 0.6%;
+}
+.bloque_1{
+	display: flex;
+	height: 450px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+    margin-right: 5%;
+}
+.texto_vertical1{
+	color: #ffffff;
+	font-family: Helvetica;
+	writing-mode: vertical-lr;
+	text-align: left;
+	transform: rotate(180deg);
+    width: 50%;
+    margin-top: none;
+
+
+}
+.escrito_1{
+	width: 100%;
+    font-size:15px;
+    font-family: Georgia, Serif;
+    color: rgb(240,240,240);
+    background-color:rgba(0,0,0,0.5); 
+
+}
+	.escrito_1 p{
+		width: 100%;
+    	margin-top: 40%;
+	}
+
+/*de aqui en adelante es el segundo botón de la pagina menú*/
+.elemento_2{
+	background-image:url("C:/Users/Luciel/Documents/GitHub/p.aucan/img/externos_boton.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    width: 20%;
+    height: 450px;
+    margin-right: 0.6%;
+    margin-top: 0%;
+    margin-left: 0.6%;
+    text-align: right;
+    min-width: 210px;
+    margin-bottom: 1%;
+}
+.elemento_3{
+	background-image:url("C:/Users/Luciel/Documents/GitHub/p.aucan/img/personal_boton.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    width: 20%;
+    height: 450px;
+    margin-right: 0.6%;
+    margin-top: 0%;
+    margin-left: 0.6%;
+    text-align: right;
+    min-width: 210px;
+    margin-bottom: 1%;
+}
+.bloque_1{
+	display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+}
+.texto_vertical1{
+	color: #ffffff;
+	font-family: Arial;
+	text-align: left;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+    width: 100%;
+    margin-top: 40%;
+}
+
+/*de aqui en adelante es el tercer botón de la pagina menú*/
